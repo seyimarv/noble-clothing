@@ -69,10 +69,13 @@ const Navigation = () => {
         <MobileMenuButton 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle navigation menu"
+          className={isMobileMenuOpen ? 'active' : ''}
         >
-          <span style={isMobileMenuOpen ? { transform: 'rotate(45deg) translate(5px, 5px)' } : {}} />
-          <span style={isMobileMenuOpen ? { opacity: 0 } : {}} />
-          <span style={isMobileMenuOpen ? { transform: 'rotate(-45deg) translate(5px, -5px)' } : {}} />
+          <div className="hamburger-icon">
+            <span className="line line-1"></span>
+            <span className="line line-2"></span>
+            <span className="line line-3"></span>
+          </div>
         </MobileMenuButton>
         
         <NavLinks style={isMobileMenuOpen ? 

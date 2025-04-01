@@ -104,21 +104,57 @@ export const MobileMenuButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  z-index: 200;
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hamburger-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 20px;
   }
   
-  span {
+  .line {
     display: block;
     height: 2px;
     width: 100%;
     background-color: #333;
+    border-radius: 2px;
     transition: all 0.3s ease;
+    position: absolute;
+  }
+  
+  .line-1 {
+    top: 4px;
+  }
+  
+  .line-2 {
+    top: 11px;
+  }
+  
+  .line-3 {
+    top: 18px;
+  }
+  
+  &.active .line-1 {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  &.active .line-2 {
+    opacity: 0;
+  }
+  
+  &.active .line-3 {
+    transform: translateY(-7px) rotate(-45deg);
   }
 `;
 
