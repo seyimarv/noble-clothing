@@ -5366,44 +5366,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"crwn-clothing@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "crwn-clothing@workspace:."
-  dependencies:
-    "@stripe/react-stripe-js": 1.7.0
-    "@stripe/stripe-js": 1.25.0
-    "@testing-library/jest-dom": 5.16.1
-    "@testing-library/react": 12.1.2
-    "@testing-library/user-event": 13.5.0
-    "@types/jest": 27.4.1
-    "@types/node": 17.0.23
-    "@types/react": 17.0.43
-    "@types/react-dom": 17.0.14
-    "@types/redux-logger": 3.0.9
-    "@types/styled-components": 5.1.24
-    babel-plugin-macros: 3.1.0
-    dotenv: 16.0.0
-    firebase: 9.6.6
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-redux: 7.2.6
-    react-router-dom: 6
-    react-scripts: 5.0.0
-    redux: 4.1.2
-    redux-logger: 3.0.6
-    redux-persist: 6.0.0
-    redux-saga: 1.1.3
-    redux-thunk: 2.4.1
-    reselect: 4.1.5
-    sass: 1.49.7
-    stripe: 8.210.0
-    styled-components: 5.3.3
-    typed-redux-saga: 1.4.0
-    typescript: 4.6.3
-    web-vitals: 2.1.4
-  languageName: unknown
-  linkType: soft
-
 "crypto-random-string@npm:^2.0.0":
   version: 2.0.0
   resolution: "crypto-random-string@npm:2.0.0"
@@ -9593,6 +9555,44 @@ __metadata:
   checksum: 0b2ebc113dfcf737d48dde49cfebf3ad2d82a8c3188e7100c6f375e30eafbef9e9124aadc3becef237b042fd5eb0aad2fd78669c20972d045bbe7fea8ba0be5c
   languageName: node
   linkType: hard
+
+"noble-clothing@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "noble-clothing@workspace:."
+  dependencies:
+    "@stripe/react-stripe-js": 1.7.0
+    "@stripe/stripe-js": 1.25.0
+    "@testing-library/jest-dom": 5.16.1
+    "@testing-library/react": 12.1.2
+    "@testing-library/user-event": 13.5.0
+    "@types/jest": 27.4.1
+    "@types/node": 17.0.23
+    "@types/react": 17.0.43
+    "@types/react-dom": 17.0.14
+    "@types/redux-logger": 3.0.9
+    "@types/styled-components": 5.1.24
+    babel-plugin-macros: 3.1.0
+    dotenv: 16.0.0
+    firebase: 9.6.6
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-redux: 7.2.6
+    react-router-dom: 6
+    react-scripts: 5.0.0
+    redux: 4.1.2
+    redux-logger: 3.0.6
+    redux-persist: 6.0.0
+    redux-saga: 1.1.3
+    redux-thunk: 2.4.1
+    reselect: 4.1.5
+    sass: 1.49.7
+    stripe: 8.210.0
+    styled-components: 5.3.3
+    typed-redux-saga: 1.4.0
+    typescript: 4.6.3
+    web-vitals: 2.1.4
+  languageName: unknown
+  linkType: soft
 
 "node-fetch@npm:2.6.7":
   version: 2.6.7

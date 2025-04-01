@@ -1,4 +1,4 @@
-import { FC, ButtonHTMLAttributes } from 'react';
+import { FC, ButtonHTMLAttributes, ReactNode } from 'react';
 
 import {
   BaseButton,
@@ -32,9 +32,11 @@ const Button: FC<ButtonProps> = ({
   ...otherProps
 }) => {
   const CustomButton = getButton(buttonType);
+  const content: ReactNode = isLoading ? <ButtonSpinner /> : children;
+  
   return (
     <CustomButton disabled={isLoading} {...otherProps}>
-      {isLoading ? <ButtonSpinner /> : (children as React.ReactNode)}
+      {content}
     </CustomButton>
   );
 };
