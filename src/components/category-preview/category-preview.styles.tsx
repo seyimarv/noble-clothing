@@ -77,16 +77,7 @@ export const Preview = styled.div`
     overflow: hidden;
   }
   
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-  
-  @media screen and (max-width: 900px) {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-  
   @media screen and (max-width: 600px) {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
   }
 `;

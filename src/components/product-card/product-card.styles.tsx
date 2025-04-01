@@ -30,11 +30,21 @@ export const ProductCartContainer = styled.div`
 
   button {
     width: 80%;
-    opacity: 0;
     position: absolute;
     top: 70%;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    @media screen and (min-width: 768px) {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    @media screen and (max-width: 767px) {
+      opacity: 0.9;
+      position: relative;
+      top: auto;
+      margin-top: 10px;
+    }
   }
 
   &:hover {
